@@ -1,0 +1,119 @@
+body{
+    display:grid;
+    grid-template-rows: 10em auto 10em;
+    grid-template-columns:2fr 5fr 1fr 1fr;
+    grid-template-areas: "header header header header"
+                          "main main main aside"
+                          "footer footer footer footer";
+  margin: 0;
+  list-style: none;
+}
+header{
+    grid-area : header;
+    display:flex;
+    background-image: url(pink6.png);
+    justify-content: center;
+    align-items: center;
+    margin-bottom:2em;
+   
+}
+nav a {
+    display:  inline-block;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    color:black;
+    padding: 0.5em ;
+    margin: 0.5em;
+    font-weight:900;
+    font-size: larger;
+    text-decoration: none; 
+    z-index: 100;
+}
+main{
+    grid-area: main;
+    margin-bottom: 46em;
+    font-size:larger;  
+    font-family:  Tahoma, sans-serif;
+    font-stretch:condensed;
+    letter-spacing: 4px;
+    
+}
+.firstpart{
+    display:grid;
+    grid-template-rows: 5em;
+    grid-template-columns:2fr 3fr;
+    grid-template-areas: "img title";
+    margin:1em;
+}
+#survey{
+    display:grid;
+    grid-template-rows:5em  50em;
+    grid-template-columns: 5fr;
+    grid-template-areas: "title"
+                         "content";
+    margin:1em;                    
+}
+.secondpart{
+    display:grid;
+    grid-template-rows:2.5em 2.5em;
+    grid-template-columns: 3fr;
+    grid-template-areas:"title"
+                         "content";
+    padding:1em;
+}
+.name{
+    display:grid;
+    grid-template-rows:2.5em 2.5em;
+    grid-template-columns: 3fr;
+    grid-template-areas:"title"
+                        "content";
+}
+.email{
+    display:grid;
+    grid-template-rows:2.5em 2.5em;
+    grid-template-columns: 3fr;
+    grid-template-areas:"title"
+                        "content";
+}
+.gender{
+    display:grid;
+    grid-template-rows:2.5em 2.5em;
+    grid-template-columns:2.5fr 2.5fr;
+    grid-template-areas:"title title"
+                        "content content";
+}
+.age{
+    display:grid;
+    grid-template-rows:2.5em 2.5em;
+    grid-template-columns:2fr 3fr;
+    grid-template-areas:"title title"
+                        "content content";
+
+}
+footer{
+    grid-area: footer;
+    display:grid;
+    background-image: url(pink6.png);
+    grid-template-rows:2.5em 5em;
+    grid-template-columns:10fr 5.5fr 5fr;
+    grid-template-areas:"content title list"
+                        "list list list";
+
+}
+footer a{
+    display:  inline-block;
+    border: 3px solid black;
+    border-radius: 1em;
+  
+    color:black;
+    padding: 0.5em ;
+    margin: 0.5em;
+    font-weight:900;
+    font-size: larger;
+    text-decoration: none; 
+    z-index: 100;
+}
+
+
+
+
